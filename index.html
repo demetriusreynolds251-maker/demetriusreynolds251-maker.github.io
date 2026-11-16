@@ -47,6 +47,11 @@ nav .links a{color:var(--muted);text-decoration:none}nav .links a:hover{color:va
 .build:hover{border-color:var(--accent);transform:translateX(3px)}
 .build b{color:var(--text)}
 .bi{font-size:1.4rem;line-height:1.2}
+.path{position:relative;margin-top:26px;padding-left:28px;border-left:2px solid var(--line)}
+.step{position:relative;padding:0 0 26px}
+.step:before{content:"";position:absolute;left:-36px;top:6px;width:14px;height:14px;border-radius:50%;background:var(--accent);box-shadow:0 0 0 4px var(--bg)}
+.step .yr{font:600 .8rem "JetBrains Mono",monospace;color:var(--accent);letter-spacing:.06em}
+.step h3{font-size:1.12rem;margin:4px 0 4px}.step p{margin:0;color:var(--muted);font-size:.96rem;max-width:62ch}
 .photo{width:100%;aspect-ratio:1;border-radius:28px;overflow:hidden;border:1px solid var(--line);box-shadow:0 20px 60px rgba(0,0,0,.35)}
 .photo img{width:100%;height:100%;object-fit:cover;display:block}
 .grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:26px}
@@ -73,7 +78,7 @@ footer{padding:36px 0 54px;color:var(--muted);font-size:.86rem;border-top:1px so
 <body>
 <nav><div class="wrap">
   <a class="logo" href="#top">Demetrius Reynolds</a>
-  <div class="links"><a href="#about">About</a><a href="#what">What I do</a><a href="#help">How I help</a><a href="#projects">Projects</a><a class="keep" href="#connect">Connect</a><button id="themeBtn" aria-label="Toggle theme">◐</button></div>
+  <div class="links"><a href="#about">About</a><a href="#path">My path</a><a href="#what">What I do</a><a href="#help">How I help</a><a href="#projects">Projects</a><a class="keep" href="#connect">Connect</a><button id="themeBtn" aria-label="Toggle theme">◐</button></div>
 </div></nav>
 
 <header class="hero" id="top"><div class="wrap herogrid">
@@ -86,7 +91,7 @@ footer{padding:36px 0 54px;color:var(--muted);font-size:.86rem;border-top:1px so
       <a class="build" href="#projects"><span class="bi">🎯</span><span><b>Career Hunt</b> is my networking copilot. It turns LinkedIn alerts into drafted replies, designs an image for every post, and waits for my ✅.</span></a>
       <a class="build" href="#projects"><span class="bi">📈</span><span><b>StockScout</b> reads SEC filings and headlines so I don't have to, and explains any stock in plain English.</span></a>
     </div>
-    <div class="tags"><span class="tag">📍 Mobile, AL · open to relocation</span><span class="tag">🎓 University of South Alabama</span><span class="tag">🧑‍💼 Team leadership</span><span class="tag">⚙️ Process improvement</span><span class="tag">🤝 Vendor negotiation</span><span class="tag">💵 Cost control</span><span class="tag">📊 SAP &amp; Excel</span></div>
+    <div class="tags"><span class="tag">📍 Mobile, AL · open to relocation</span><span class="tag">🎓 University of South Alabama</span><span class="tag">🏡 $2M+ in real estate sales</span><span class="tag">🧑‍💼 Team leadership</span><span class="tag">⚙️ Process improvement</span><span class="tag">🤝 Vendor negotiation</span><span class="tag">💵 Cost control</span><span class="tag">📊 SAP &amp; Excel</span></div>
     <div class="cta">
       <a class="btn primary" href="https://www.linkedin.com/in/demetrius-reynolds/" target="_blank" rel="noopener">🤝 Connect on LinkedIn</a>
       <a class="btn" href="#projects">🧪 See what I've built</a>
@@ -106,10 +111,22 @@ footer{padding:36px 0 54px;color:var(--muted);font-size:.86rem;border-top:1px so
   </div>
 </div></section>
 
+<section id="path"><div class="wrap">
+  <div class="eyebrow">📍 My path</div>
+  <h2>From running a store to running logistics</h2>
+  <p class="muted">Every job taught me something I still use: how to run a shift, deliver a project, close a deal, and keep things moving.</p>
+  <div class="path">
+    <div class="step reveal"><div class="yr">2020 – NOW</div><h3>🚚 Way to Go Logistics</h3><p>Logistics and operations: keeping freight, vendors, costs and schedules moving in the right direction.</p></div>
+    <div class="step reveal"><div class="yr">2016 – 2020</div><h3>🏡 Real estate agent · RE/MAX Realty Professionals</h3><p>Helped buyers and sellers in Mobile and closed over <b>$2 million</b> in sales. Learned negotiation, follow-through, and how to earn trust fast.</p></div>
+    <div class="step reveal"><div class="yr">2015 – 2018</div><h3>🏗️ Construction project manager · PH company</h3><p>Kept construction projects on schedule and on budget by coordinating crews, materials and timelines.</p></div>
+    <div class="step reveal" style="padding-bottom:0"><div class="yr">2013 – 2015</div><h3>🍽️ Captain D's · crew to manager in under a year</h3><p>My first job. Within a year I was managing the store: inventory, bank deposits and everything else a manager does.</p></div>
+  </div>
+</div></section>
+
 <section id="what"><div class="wrap">
   <div class="eyebrow">What I do</div>
   <h2>Operations is my day job, and my way of thinking</h2>
-  <p class="muted">I learned operations from the ground up. My first job was at Captain D's, and within a year I was managing: inventory, bank deposits and everything else a manager does. Since then, most of my work comes down to three things: getting the right people on the right work, taking waste out of a process, and making sure the numbers tell the truth.</p>
+  <p class="muted">Across food service, construction, real estate and logistics, most of my work comes down to three things: getting the right people on the right work, taking waste out of a process, and making sure the numbers tell the truth.</p>
   <div class="grid3">
     <div class="card reveal"><div class="ic">🧑‍🤝‍🧑</div><h3>Lead teams</h3><p>Schedules, coaching and clear expectations, so the team knows what good looks like and can hit it.</p></div>
     <div class="card reveal"><div class="ic">⚙️</div><h3>Fix processes</h3><p>Find where time and money leak, change one thing at a time, and measure whether it actually worked.</p></div>
