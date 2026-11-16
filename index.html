@@ -42,6 +42,11 @@ nav .links a{color:var(--muted);text-decoration:none}nav .links a:hover{color:va
 .cta{display:flex;gap:12px;flex-wrap:wrap}
 .btn{display:inline-flex;align-items:center;gap:8px;padding:11px 18px;border-radius:10px;font-weight:600;text-decoration:none;border:1px solid var(--line);color:var(--text);background:var(--card)}
 .btn.primary{background:var(--accent);color:#04120c;border-color:transparent}
+.builds{display:grid;gap:10px;margin:22px 0 6px;max-width:60ch}
+.build{display:flex;gap:14px;align-items:flex-start;text-decoration:none;color:var(--muted);background:var(--card);border:1px solid var(--line);border-radius:14px;padding:12px 14px;font-size:.95rem;line-height:1.5;transition:.2s}
+.build:hover{border-color:var(--accent);transform:translateX(3px)}
+.build b{color:var(--text)}
+.bi{font-size:1.4rem;line-height:1.2}
 .photo{width:100%;aspect-ratio:1;border-radius:28px;overflow:hidden;border:1px solid var(--line);box-shadow:0 20px 60px rgba(0,0,0,.35)}
 .photo img{width:100%;height:100%;object-fit:cover;display:block}
 .grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:26px}
@@ -75,7 +80,12 @@ footer{padding:36px 0 54px;color:var(--muted);font-size:.86rem;border-top:1px so
   <div>
     <div class="eyebrow">👋 Hi, I'm Demetrius</div>
     <h1>I make operations <em>run smoother</em>, and I build the tools to prove it.</h1>
-    <p class="lead">I'm an operations and business professional in Mobile, Alabama, focused on process improvement, cost control, vendor negotiation and building high-performing teams. In my spare time I build data tools with AI, like Apex, a system that runs around the clock and grades its own results.</p>
+    <p class="lead">By day I'm an operations and business professional in Mobile, Alabama: process improvement, cost control, vendor negotiation and high-performing teams. After hours I'm a builder. I design systems with AI that think in probabilities, read the fine print, and always keep a human in charge.</p>
+    <div class="builds">
+      <a class="build" href="#projects"><span class="bi">🎾</span><span><b>Apex</b> prices sports props 24/7, then grades every pick against the real result so it can't fool itself.</span></a>
+      <a class="build" href="#projects"><span class="bi">🎯</span><span><b>Career Hunt</b> is my networking copilot. It turns LinkedIn alerts into drafted replies, designs an image for every post, and waits for my ✅.</span></a>
+      <a class="build" href="#projects"><span class="bi">📈</span><span><b>StockScout</b> reads SEC filings and headlines so I don't have to, and explains any stock in plain English.</span></a>
+    </div>
     <div class="tags"><span class="tag">📍 Mobile, AL · open to relocation</span><span class="tag">🎓 University of South Alabama</span><span class="tag">🧑‍💼 Team leadership</span><span class="tag">⚙️ Process improvement</span><span class="tag">🤝 Vendor negotiation</span><span class="tag">💵 Cost control</span><span class="tag">📊 SAP &amp; Excel</span></div>
     <div class="cta">
       <a class="btn primary" href="https://www.linkedin.com/in/demetrius-reynolds-655293421/" target="_blank" rel="noopener">🤝 Connect on LinkedIn</a>
