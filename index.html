@@ -52,6 +52,11 @@ nav .links a{color:var(--muted);text-decoration:none}nav .links a:hover{color:va
 .step:before{content:"";position:absolute;left:-36px;top:6px;width:14px;height:14px;border-radius:50%;background:var(--accent);box-shadow:0 0 0 4px var(--bg)}
 .step .yr{font:600 .8rem "JetBrains Mono",monospace;color:var(--accent);letter-spacing:.06em}
 .step h3{font-size:1.12rem;margin:4px 0 4px}.step p{margin:0;color:var(--muted);font-size:.96rem;max-width:62ch}
+.step .co{display:flex;align-items:center;gap:12px;margin:6px 0 6px}
+.step .co img{height:44px;width:auto;max-width:120px;object-fit:contain;background:#fff;border-radius:10px;padding:4px;border:1px solid var(--line)}
+.step .co h3{margin:0}
+@media(max-width:640px){.step .co{flex-direction:column;align-items:flex-start;gap:8px}}
+.step .co a{color:inherit;text-decoration:none}
 .photo{width:100%;aspect-ratio:1;border-radius:28px;overflow:hidden;border:1px solid var(--line);box-shadow:0 20px 60px rgba(0,0,0,.35)}
 .photo img{width:100%;height:100%;object-fit:cover;display:block}
 .grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:26px}
@@ -85,7 +90,7 @@ footer{padding:36px 0 54px;color:var(--muted);font-size:.86rem;border-top:1px so
   <div>
     <div class="eyebrow">👋 Hi, I'm Demetrius</div>
     <h1>I make operations <em>run smoother</em>, and I build the tools to prove it.</h1>
-    <p class="lead">By day I'm an Operations Manager at Way to Go Logistics in Mobile, Alabama, and I've been leading teams since 2013: process improvement, cost control, vendor negotiation and high-performing teams. After hours I'm a builder. I design systems with AI that think in probabilities, read the fine print, and always keep a human in charge.</p>
+    <p class="lead">By day I'm an Operations Manager at Way To Go Logistics in Mobile, Alabama, and I've been leading teams since 2013: process improvement, cost control, vendor negotiation and high-performing teams. After hours I'm a builder. I design systems with AI that think in probabilities, read the fine print, and always keep a human in charge.</p>
     <div class="builds">
       <a class="build" href="#projects"><span class="bi">🎾</span><span><b>Apex Intelligence™</b> prices sports props 24/7, then grades every pick against the real result so it can't fool itself.</span></a>
       <a class="build" href="#projects"><span class="bi">🎯</span><span><b>Career Hunt</b> is my networking copilot. It turns LinkedIn alerts into drafted replies, designs an image for every post, and waits for my ✅.</span></a>
@@ -116,9 +121,9 @@ footer{padding:36px 0 54px;color:var(--muted);font-size:.86rem;border-top:1px so
   <h2>From running a store to running logistics</h2>
   <p class="muted">Every job taught me something I still use: how to run a shift, deliver a project, close a deal, and keep things moving.</p>
   <div class="path">
-    <div class="step reveal"><div class="yr">2020 – PRESENT</div><h3>🚚 Operations Manager · Way to Go Logistics</h3><p>Oversee day-to-day logistics operations, aligning people, vendors, schedules and costs so freight moves on time and on budget. I bring a builder's mindset: when a process can be measured or automated, I build the tool for it.</p></div>
-    <div class="step reveal"><div class="yr">2016 – 2020</div><h3>🏡 Realtor · RE/MAX Realty Professionals</h3><p>Guided buyers and sellers across the Mobile market and closed <b>$2 million in sales every year</b>. Sharpened the negotiation, client management and follow-through that turn first conversations into closings.</p></div>
-    <div class="step reveal"><div class="yr">2015 – 2018</div><h3>🏗️ Construction Project Manager · PH Company</h3><p>Managed construction projects from planning to completion, coordinating crews, subcontractors, materials and timelines to keep work on schedule and within budget.</p></div>
+    <div class="step reveal"><div class="yr">2020 – PRESENT</div><div class="co"><img src="img/waytogo.png" alt="Way To Go Logistics LLC logo"><h3>Operations Manager · Way To Go Logistics LLC</h3></div><p>Oversee day-to-day logistics operations, aligning people, vendors, schedules and costs so freight moves on time and on budget. I bring a builder's mindset: when a process can be measured or automated, I build the tool for it.</p></div>
+    <div class="step reveal"><div class="yr">2016 – 2020</div><div class="co"><img src="img/remax.jpg" alt="RE/MAX Realty Professionals logo"><h3><a href="https://www.facebook.com/share/1LR44uVqC4/" target="_blank" rel="noopener">Realtor · RE/MAX Realty Professionals ↗</a></h3></div><p>Guided buyers and sellers across the Mobile market and closed <b>$2 million in sales every year</b>. Sharpened the negotiation, client management and follow-through that turn first conversations into closings.</p></div>
+    <div class="step reveal"><div class="yr">2015 – 2018</div><div class="co"><img src="img/phcompany.jpg" alt="PH Company Building &amp; Design logo"><h3><a href="https://www.facebook.com/share/1G7df9BfxY/" target="_blank" rel="noopener">Construction Project Manager · PH Company Building &amp; Design ↗</a></h3></div><p>Managed construction projects from planning to completion, coordinating crews, subcontractors, materials and timelines to keep work on schedule and within budget.</p></div>
     <div class="step reveal" style="padding-bottom:0"><div class="yr">2013 – 2015</div><h3>🍽️ Manager · Captain D's</h3><p>Promoted from crew member to manager in under a year. Ran full restaurant operations: inventory control, cash management and bank deposits, shift leadership and the guest experience. It's the foundation of my operations career.</p></div>
   </div>
 </div></section>
