@@ -1,0 +1,15 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex">
+<title>Career Hunt · LinkedIn connected</title>
+<style>body{margin:0;background:#0b0f17;color:#e6ebf5;font:17px/1.6 system-ui,sans-serif;display:grid;place-items:center;min-height:100vh;padding:20px}
+.c{max-width:460px;width:100%;background:#141c2b;border:1px solid #243049;border-radius:18px;padding:26px;text-align:center}
+code{display:block;word-break:break-all;background:#0b0f17;border:1px solid #243049;border-radius:10px;padding:12px;margin:14px 0;font-size:14px;color:#3ee6a8}
+button{background:#3ee6a8;color:#04120c;border:0;border-radius:10px;padding:12px 18px;font-weight:700;font-size:16px}</style></head>
+<body><div class="c" id="c"></div>
+<script>
+const q=new URLSearchParams(location.search),code=q.get('code'),err=q.get('error_description')||q.get('error');
+const c=document.getElementById('c');
+if(code){c.innerHTML='<h2>✅ LinkedIn said yes!</h2><p>Copy this code and send it to Claude in the project chat. It works once and expires in about 10 minutes.</p><code id="k"></code><button id="b">📋 Copy code</button>';
+document.getElementById('k').textContent=code;
+document.getElementById('b').onclick=()=>{navigator.clipboard.writeText(code).then(()=>{document.getElementById('b').textContent='✅ Copied!'})};}
+else{c.innerHTML='<h2>⚠️ No code</h2><p></p>';c.querySelector('p').textContent=err||'Open this page from the LinkedIn "Allow" link.';}
+</script></body></html>
